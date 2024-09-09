@@ -1,0 +1,35 @@
+/*
+ * Empty Stylesheet file.
+ */
+ .side_ankerpane{
+     -fx-background-color:#353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.inner_pane{
+        -fx-background-color:#748CF1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+    
+}
+.Home{
+    -fx-background-color:#6780E2;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #141313;
+}
+.root{
+    -fx-background-color:#EAEEF4;
+}
+.default-color0.chart-pie { -fx-pie-color: #353A56; }
+.default-color1.chart-pie { -fx-pie-color: #748CF1; }
+.default-color2.chart-pie { -fx-pie-color: #141313; }
+.default-color3.chart-pie { -fx-pie-color: #adff2f; }
+.default-color4.chart-pie { -fx-pie-color: #ff5700; }

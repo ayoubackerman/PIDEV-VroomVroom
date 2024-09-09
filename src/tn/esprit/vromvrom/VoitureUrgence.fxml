@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="511.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.vromvrom.VoitureUrgenceController">
+   <children>
+      <TableView fx:id="m" layoutX="397.0" layoutY="175.0" prefHeight="200.0" prefWidth="518.0">
+        <columns>
+          <TableColumn fx:id="a" prefWidth="75.0" text="modele" />
+          <TableColumn fx:id="b" prefWidth="75.0" text="marque" />
+            <TableColumn fx:id="c" prefWidth="75.0" text="matricule" />
+            <TableColumn fx:id="d" prefWidth="75.0" text="nb_place" />
+            <TableColumn fx:id="e" prefWidth="75.0" text="statuts" />
+            <TableColumn fx:id="f" prefWidth="75.0" text="image" />
+        </columns>
+      </TableView>
+      <TextField fx:id="modele" layoutX="90.0" layoutY="118.0" promptText="modele" />
+      <TextField fx:id="image" layoutX="90.0" layoutY="388.0" promptText="image" />
+      <TextField fx:id="marque" layoutX="90.0" layoutY="175.0" promptText="marque" />
+      <TextField fx:id="matricule" layoutX="90.0" layoutY="222.0" promptText="matricule" />
+      <TextField fx:id="nb_place" layoutX="90.0" layoutY="275.0" promptText="nb_place" />
+      <TextField fx:id="statuts" layoutX="90.0" layoutY="334.0" promptText="statuts" />
+      <Button fx:id="add" layoutX="50.0" layoutY="449.0" mnemonicParsing="false" onAction="#AddVoitureUrgence" text="Add" />
+      <Button fx:id="delete" layoutX="129.0" layoutY="449.0" mnemonicParsing="false" onAction="#Supprimer" text="Delete" />
+      <Button fx:id="update" layoutX="223.0" layoutY="449.0" mnemonicParsing="false" onAction="#Modifier" text="Update" />
+   </children>
+</AnchorPane>

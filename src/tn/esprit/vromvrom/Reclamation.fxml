@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.vromvrom.ReclamationController">
+    <stylesheets>
+        <URL value="@reclamation.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutY="3.0" prefHeight="500.0" prefWidth="972.0">
+         <bottom>
+            <AnchorPane fx:id="inter" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #84d2f6;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="349.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VromVrom Reclamation " textOrigin="CENTER" wrappingWidth="472.25341796875">
+                     <font>
+                        <Font size="42.0" />
+                     </font></Text>
+                  <TableView fx:id="tab" layoutX="28.0" layoutY="106.0" prefHeight="372.0" prefWidth="920.0">
+                    <columns>
+                      <TableColumn fx:id="colu" prefWidth="75.0" text="ID_USER" visible="false" />
+                      <TableColumn fx:id="colnom" prefWidth="75.0" text="NOM" />
+                        <TableColumn fx:id="colpre" prefWidth="75.0" text="PRENOM" />
+                        <TableColumn fx:id="colrecla" prefWidth="124.0" text="RECLAMATION" />
+                        <TableColumn fx:id="colreso" prefWidth="117.0" text="RESOLUTION" />
+                        <TableColumn fx:id="coltyperec" prefWidth="204.0" text="TYPE_RECLAMATION" />
+                        <TableColumn fx:id="coltime" prefWidth="156.0" text="TIME" />
+                        <TableColumn fx:id="coltime1" prefWidth="167.0" text="action" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="tems" layoutX="761.0" layoutY="71.0" promptText="temps" />
+                  <ImageView fitHeight="141.0" fitWidth="163.0" layoutX="14.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/image/vm-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="id_reclamation" layoutX="761.0" layoutY="71.0" promptText="id_reclamation" />
+                  <TextField fx:id="resolution" layoutX="761.0" layoutY="71.0" promptText="resolution" />
+                  <TextField fx:id="user" layoutX="761.0" layoutY="71.0" promptText="user" />
+                  <TextField fx:id="type" layoutX="761.0" layoutY="71.0" promptText="resolution" />
+                  <TextField fx:id="reclamation" layoutX="761.0" layoutY="71.0" promptText="resolution" />
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

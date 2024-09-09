@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="814.0" style="-fx-background-color: #EAEEF4;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.vromvrom.ManageUserController">
+   <children>
+      <TableView fx:id="tab_User" layoutX="204.0" layoutY="119.0" prefHeight="248.0" prefWidth="595.0">
+         <columns>
+            <TableColumn fx:id="n" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="p" prefWidth="75.0" text="Prenom" />
+            <TableColumn fx:id="e" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="u" prefWidth="64.00006103515625" text="Username" />
+            <TableColumn fx:id="s" prefWidth="63.199981689453125" text="Status" />
+            <TableColumn fx:id="r" prefWidth="72.800048828125" text="Role" />
+            <TableColumn fx:id="num" prefWidth="83.199951171875" text="Numero" />
+            <TableColumn fx:id="Action" prefWidth="82.4000244140625" text="Action" />
+            <TableColumn fx:id="user" prefWidth="88.0" text="User" />
+         </columns>
+      </TableView>
+      <Button fx:id="Add2" layoutX="24.0" layoutY="460.0" mnemonicParsing="false" onAction="#AddUser" text="Add" />
+      <Button fx:id="Edi" layoutX="197.0" layoutY="460.0" mnemonicParsing="false" onAction="#Modifier2" text="Edit" />
+      <Button fx:id="dd" layoutX="109.0" layoutY="460.0" mnemonicParsing="false" onAction="#dell" text="Delete" />
+      <TextField fx:id="uu" layoutX="283.0" layoutY="24.0">
+         <font>
+            <Font name="Century Gothic" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="img" layoutX="97.0" layoutY="415.0" mnemonicParsing="false" onAction="#Ajoutefichier" text="Add Image" />
+      <TextField fx:id="urlx" layoutX="283.0" layoutY="451.0" />
+      <TextField fx:id="nom" layoutX="15.0" layoutY="97.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #748cf1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="Email" layoutX="15.0" layoutY="205.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #748cf1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="prenom" layoutX="15.0" layoutY="153.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-color: #748cf1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="nd" layoutX="15.0" layoutY="265.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #748cf1; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="conf_pass" layoutX="15.0" layoutY="371.0" promptText="Comfirm password" style="-fx-background-color: transparent; -fx-border-color: #748cf1; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="pass" layoutX="15.0" layoutY="320.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #748cf1; -fx-border-width: 0px 0px 2px 0px;" />
+      <JFXComboBox fx:id="comm" focusColor="#748cf1" layoutX="15.0" layoutY="54.0" promptText="Role" unFocusColor="#748cf1" />
+      <TextField fx:id="recherche" layoutX="536.0" layoutY="54.0" promptText="Search" style="-fx-background-color: transparent; -fx-border-color: #748cf1; -fx-border-width: 0px 0px 2px 0px;" />
+   </children>
+   <stylesheets>
+      <URL value="@profile.css" />
+      <URL value="@manageuser.css" />
+   </stylesheets>
+</AnchorPane>

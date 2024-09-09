@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="511.0" prefWidth="814.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.vromvrom.ReponseController">
+    <stylesheets>
+        <URL value="@reponse.css" />
+    </stylesheets>
+    <children>
+      <BorderPane layoutY="3.0" prefHeight="511.0" prefWidth="814.0">
+         <top>
+            <AnchorPane prefHeight="511.0" prefWidth="814.0" style="-fx-background-color: #EAEEF4;" styleClass="mainFxmlClass" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="rreponse" layoutX="91.0" layoutY="279.0" prefHeight="62.0" prefWidth="372.0" promptText="Reponse" />
+                  <TableView fx:id="tableau" layoutX="106.0" layoutY="352.0" prefHeight="277.0" prefWidth="714.0" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="174.0" AnchorPane.topAnchor="352.0">
+                    <columns>
+                      <TableColumn fx:id="colrep" prefWidth="117.0" text="ID_Reclamation" visible="false" />
+                      <TableColumn fx:id="coliduser" prefWidth="71.0" text="ID_USER" visible="false" />
+                        <TableColumn fx:id="colnom" prefWidth="48.0" text="NOM" />
+                        <TableColumn fx:id="colpren" prefWidth="76.0" text="PRENOM" />
+                        <TableColumn fx:id="colrecl" prefWidth="115.0" text="RECLAMATION" />
+                        <TableColumn fx:id="coltyperec" prefWidth="158.0" text="TYPE_RECLAMATION" />
+                        <TableColumn fx:id="colreso" prefWidth="119.0" text="RESOLUTION" />
+                        <TableColumn fx:id="colrepn" prefWidth="97.0" text="REPONSE" />
+                        <TableColumn fx:id="coltimerep" prefWidth="100.0" text="TIME" />
+                    </columns>
+                     <cursor>
+                      
+                     </cursor>
+                  </TableView>
+                  <Button fx:id="modrep" layoutX="489.0" layoutY="303.0" mnemonicParsing="false" onAction="#update" prefHeight="11.0" prefWidth="176.0" style="-fx-background-color: #133c55;" text="MODIFIER LA REPONSE" textFill="WHITE">
+                     <cursor>
+                     </cursor>
+                     <effect>
+                        <Bloom threshold="0.24" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="adrep" layoutX="463.0" layoutY="232.0" mnemonicParsing="false" onAction="#Adid" prefHeight="25.0" prefWidth="228.0" style="-fx-background-color: #133c55;" text="AJOUTER A LA TABLE REPONSE" textFill="WHITE">
+                     <cursor>
+                     </cursor>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Button>
+                  <Button fx:id="suprep" layoutX="720.0" layoutY="303.0" mnemonicParsing="false" onAction="#DELLTT" style="-fx-background-color: #133c55;" text="SUPPRIMER LA REPONSE" textFill="WHITE">
+                     <cursor>
+                     </cursor>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Button>
+                  <TextField fx:id="temps" layoutX="731.0" layoutY="232.0" promptText="temps" />
+                  <TextField fx:id="id_rec" layoutX="72.0" layoutY="232.0" opacity="0.58" promptText="id_rec" />
+                  <TextField fx:id="id_user" layoutX="266.0" layoutY="232.0" opacity="0.58" promptText="id_user" />
+                  <TextField fx:id="cherch" layoutX="106.0" layoutY="162.0" prefHeight="6.0" prefWidth="204.0" promptText="cherche" />
+                  <Button fx:id="modrep1" layoutX="326.0" layoutY="162.0" mnemonicParsing="false" prefHeight="11.0" prefWidth="176.0" style="-fx-background-color: #133c55;" text="MODIFIER LA REPONSE" textFill="WHITE">
+                     <cursor>
+                     </cursor>
+                     <effect>
+                        <Bloom threshold="0.24" />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

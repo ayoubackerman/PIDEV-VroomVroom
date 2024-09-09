@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pane1" prefHeight="511.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.vromvrom.HomeController">
+   <children>
+      <PieChart fx:id="pie" layoutX="75.0" layoutY="68.0" prefHeight="329.0" prefWidth="390.0" stylesheets="@home.css" />
+      <Label layoutX="527.0" layoutY="102.0" text="Total utilisateur :" />
+      <Label layoutX="527.0" layoutY="138.0" text="Total chauffeurs:" />
+      <Label layoutX="527.0" layoutY="175.0" text="Total Clients :" />
+      <Label fx:id="tt" layoutX="645.0" layoutY="138.0" prefHeight="17.0" prefWidth="11.0" />
+      <Label fx:id="ttt" layoutX="645.0" layoutY="175.0" prefHeight="17.0" prefWidth="11.0" />
+      <Label fx:id="t" layoutX="650.0" layoutY="102.0" />
+   </children>
+</Pane>

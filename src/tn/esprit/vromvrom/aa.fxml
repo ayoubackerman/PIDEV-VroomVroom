@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.vromvrom.AjouterReclamationController">
+    <stylesheets>
+        <URL value="@aa.css" />
+    </stylesheets>
+   <children>
+      <Rectangle fx:id="type1" arcHeight="5.0" arcWidth="5.0" fill="#ebdada19" height="407.0" layoutX="10.0" layoutY="8.0" stroke="WHITE" strokeType="INSIDE" width="601.0" />
+      <TextArea fx:id="description" layoutX="82.0" layoutY="170.0" prefHeight="200.0" prefWidth="466.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#07aef2" height="55.0" layoutX="5.0" layoutY="36.0" stroke="#f4b707" strokeType="INSIDE" width="601.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#079ff2" height="84.0" layoutX="471.0" layoutY="22.0" stroke="#f4b707" strokeType="INSIDE" width="97.0" />
+      <Button fx:id="envoi" layoutX="483.0" layoutY="339.0" mnemonicParsing="false" onAction="#AddReclamation" text="Envoyer" />
+      <ImageView fitHeight="120.0" fitWidth="118.0" layoutX="461.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/image/vm-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="user" layoutX="81.0" layoutY="370.0" promptText="id_user" />
+      <ChoiceBox fx:id="type" layoutX="82.0" layoutY="139.0" prefHeight="31.0" prefWidth="232.0" styleClass="ChoiceBox" />
+      <ImageView fitHeight="39.0" fitWidth="272.0" layoutX="71.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/image/Captu-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="303.0" layoutX="23.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/image/Capture_d_écran_2023-03-04_023207-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="time" layoutX="333.0" layoutY="130.0" />
+   </children>
+</AnchorPane>
